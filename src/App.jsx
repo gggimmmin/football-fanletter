@@ -1,5 +1,5 @@
 import React from "react";
-import Globalstyle from "src/styles/Globalstyle";
+import Globalstyle from "src/styles/GlobalStyle";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import LetterInput from "./components/LetterInput";

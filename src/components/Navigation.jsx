@@ -1,6 +1,6 @@
 // Navigation.jsx
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Navigation = () => {
   const navigate = useNavigate();
@@ -13,7 +13,13 @@ const Navigation = () => {
     <nav>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <button
+            onClick={() => {
+              navigate("src/pages/Home.jsx");
+            }}
+          >
+            Home
+          </button>
         </li>
         <li>
           <button onClick={() => handlePlayerClick(1)}>Player 1</button>

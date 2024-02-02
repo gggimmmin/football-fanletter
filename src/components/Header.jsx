@@ -1,9 +1,12 @@
 import React from "react";
+import { HeaderContainer, HeaderTitle } from "src/styles/HeaderStyle";
 
 function Header() {
   return (
     <>
-      <h3>Header</h3>
+      <HeaderContainer>
+        <HeaderTitle>대한민국 국가대표 축구팀 Fan Letter</HeaderTitle>
+      </HeaderContainer>
     </>
   );
 }
