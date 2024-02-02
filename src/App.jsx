@@ -1,5 +1,5 @@
-// App.js
 import React from "react";
+import Globalstyle from "src/styles/Globalstyle";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import LetterInput from "./components/LetterInput";
@@ -11,6 +11,7 @@ function App() {
   return (
     <Router>
       <>
+        <Globalstyle />
         <Header />
         <Navigation />
         <LetterInput />
