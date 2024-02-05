@@ -1,0 +1,42 @@
+[
+  {
+    "createdAt": "2023-11-03T02:07:09.423Z",
+    "nickname": "red123123",
+    "avatar": "src/assets/avavtar2.png",
+    "content": "대한민국의 캡틴 손흥민 화이팅 !",
+    "writedTo": "손흥민",
+    "id": "1"
+  },
+  {
+    "createdAt": "2023-11-02T23:13:18.491Z",
+    "nickname": "googoo5566",
+    "avatar": "src/assets/avavtar2.png",
+    "content": "이강인 선수 화이팅입니다 ~~~",
+    "writedTo": "이강인",
+    "id": "2"
+  },
+  {
+    "createdAt": "2023-11-02T11:25:37.026Z",
+    "nickname": "soccer1515",
+    "avatar": "src/assets/avavtar2.png",
+    "content": "부상 조심하세요 ~!",
+    "writedTo": "김민재",
+    "id": "3"
+  },
+  {
+    "createdAt": "2023-11-02T16:06:34.150Z",
+    "nickname": "Max8877",
+    "avatar": "src/assets/avavtar2.png",
+    "content": "4강 진출 축하드립니다~~",
+    "writedTo": "황희찬",
+    "id": "4"
+  },
+  {
+    "createdAt": "2023-11-03T05:40:17.575Z",
+    "nickname": "tot236",
+    "avatar": "src/assets/avavtar2.png",
+    "content": "프리킥 골이 환상적입니다 !",
+    "writedTo": "손흥민",
+    "id": "5"
+  }
+]
