@@ -1,40 +1,34 @@
-// Navigation.jsx
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { NavContainer, NavBtn } from "src/styles/NavigationStyle";
 
 const Navigation = () => {
   const navigate = useNavigate();
+  const [activePlayer, setActivePlayer] = useState(0);
 
   const handlePlayerClick = (player) => {
     navigate(`/player${player}`);
+    setActivePlayer(player);
   };
 
   return (
-    <nav>
-      <ul>
-        <li>
-          <button
-            onClick={() => {
-              navigate("src/pages/Home.jsx");
-            }}
-          >
-            Home
-          </button>
-        </li>
-        <li>
-          <button onClick={() => handlePlayerClick(1)}>Player 1</button>
-        </li>
-        <li>
-          <button onClick={() => handlePlayerClick(2)}>Player 2</button>
-        </li>
-        <li>
-          <button onClick={() => handlePlayerClick(3)}>Player 3</button>
-        </li>
-        <li>
-          <button onClick={() => handlePlayerClick(4)}>Player 4</button>
-        </li>
-      </ul>
-    </nav>
+    <NavContainer>
+      <NavBtn onClick={() => handlePlayerClick(0)} active={activePlayer === 0}>
+        Home
+      </NavBtn>
+      <NavBtn onClick={() => handlePlayerClick(1)} active={activePlayer === 1}>
+        손흥민
+      </NavBtn>
+      <NavBtn onClick={() => handlePlayerClick(2)} active={activePlayer === 2}>
+        이강인
+      </NavBtn>
+      <NavBtn onClick={() => handlePlayerClick(3)} active={activePlayer === 3}>
+        김민재
+      </NavBtn>
+      <NavBtn onClick={() => handlePlayerClick(4)} active={activePlayer === 4}>
+        황희찬
+      </NavBtn>
+    </NavContainer>
   );
 };
 

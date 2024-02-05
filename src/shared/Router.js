@@ -10,7 +10,7 @@ import Player4 from "src/pages/Player4";
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="player0" element={<Home />} />
       <Route path="player1" element={<Player1 />} />
       <Route path="player2" element={<Player2 />} />
       <Route path="player3" element={<Player3 />} />
