@@ -1,5 +1,12 @@
-// LetterInput.js
 import React, { useState } from "react";
+import {
+  LetterContainer,
+  Title,
+  Label,
+  Input,
+  TextArea,
+  Button,
+} from "src/styles/LetterInputStyle";
 
 const LetterInput = ({ onAddFanLetter, currentPlayer }) => {
   const [nickname, setNickname] = useState("");
@@ -25,25 +32,25 @@ const LetterInput = ({ onAddFanLetter, currentPlayer }) => {
   };
 
   return (
-    <div>
-      <h2>Write Fan Letter to {currentPlayer}</h2>
+    <LetterContainer>
+      <Title>Write Fan Letter to {currentPlayer}</Title>
       <div>
         <label>Nickname:</label>
-        <input
+        <Input
           type="text"
           value={nickname}
           onChange={(e) => setNickname(e.target.value)}
         />
       </div>
       <div>
-        <label>Content:</label>
-        <textarea
+        <Label>Content:</Label>
+        <TextArea
           value={content}
           onChange={(e) => setContent(e.target.value)}
         />
       </div>
-      <button onClick={handleAddFanLetter}>Add Fan Letter</button>
-    </div>
+      <Button onClick={handleAddFanLetter}>Add Fan Letter</Button>
+    </LetterContainer>
   );
 };
 

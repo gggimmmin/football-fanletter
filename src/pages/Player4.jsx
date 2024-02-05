@@ -3,7 +3,7 @@ import fakeData from "../data/fakeData.json";
 import { ListItem } from "src/styles/PlayerStyle";
 import LetterInput from "src/components/LetterInput";
 
-function Player1() {
+function Player4() {
   const [playerData, setPlayerData] = useState(
     fakeData.filter((item) => item.writedTo === "황희찬")
   );
@@ -28,4 +28,4 @@ function Player1() {
   );
 }
 
-export default Player1;
+export default Player4;
